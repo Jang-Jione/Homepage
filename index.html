@@ -127,12 +127,7 @@
   }
 
   /* publications */
-  .pub {
-    padding: 18px 20px; margin-bottom: 12px;
-    border: 1px solid var(--line); border-radius: 16px;
-    transition: border-color .15s, box-shadow .15s;
-  }
-  .pub:hover { border-color: #e2e2e6; box-shadow: 0 6px 20px rgba(20, 20, 40, .04); }
+  .pub { margin-bottom: 32px; }
   .pub { display: grid; grid-template-columns: 200px minmax(0, 1fr); column-gap: 20px; align-items: start; }
   .pub > * { grid-column: 2; }
   .pub > .fig { grid-column: 1; grid-row: 1 / span 6; align-self: center; }
@@ -181,7 +176,7 @@
     .row, .chip-row { flex-direction: column; gap: 2px; }
     .date, .chip-row .label { width: auto; }
     .news .row { flex-direction: row; gap: 12px; }
-    .pub { padding: 16px; grid-template-columns: minmax(0, 1fr); }
+    .pub { grid-template-columns: minmax(0, 1fr); }
     .pub > *, .pub > .fig { grid-column: 1; grid-row: auto; }
     .pub > .fig { margin-bottom: 12px; }
   }
