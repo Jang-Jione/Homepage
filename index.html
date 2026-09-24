@@ -133,6 +133,13 @@
     transition: border-color .15s, box-shadow .15s;
   }
   .pub:hover { border-color: #e2e2e6; box-shadow: 0 6px 20px rgba(20, 20, 40, .04); }
+  .fig {
+    display: block; margin: -4px -4px 16px; padding: 14px;
+    background: #fff; border: 1px solid var(--line); border-radius: 12px;
+    cursor: zoom-in; transition: border-color .15s;
+  }
+  .fig:hover { border-color: #dcdce0; }
+  .fig img { display: block; width: 100%; height: auto; }
   .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
   .badge {
     display: inline-block; padding: 1px 9px; border-radius: 6px;
@@ -233,7 +240,7 @@
     <section id="news" class="news">
       <h2>News</h2>
       <div class="row"><div class="date"><span>Sep 2026</span></div><div class="body">Started M.Sc. at KAIST RV Lab.</div></div>
-      <div class="row"><div class="date"><span>2026</span></div><div class="body">Our paper accepted to <b>MICCAI 2026</b> as an <b style="color:var(--coral)">Early Accept (Top 9%), Oral</b>.</div></div>
+      <div class="row"><div class="date"><span>Sep 2026</span></div><div class="body">Our paper accepted to <b>MICCAI 2026</b> as an <b style="color:var(--coral)">Early Accept (Top 9%), Oral</b>.</div></div>
       <div class="row"><div class="date"><span>Feb 2026</span></div><div class="body">Graduated from DGIST with a B.S. in Computer Science.</div></div>
     </section>
 
@@ -250,6 +257,7 @@
       <h2>Publications</h2>
 
       <div class="pub">
+        <a class="fig" href="Figure/MultiViewSAM2.png"><img src="Figure/MultiViewSAM2.png" alt="Overview of multi-view consistency-based SAM2 adaptation" loading="lazy"></a>
         <div class="badges"><span class="badge venue">MICCAI 2026</span><span class="badge hot">Early Accept · Top 9%</span><span class="badge hot">Oral</span></div>
         <div class="ptitle">Multi-View Consistency-Based Adaptation of SAM2 for 3D ABUS Tumor Segmentation</div>
         <div class="authors">Soopil Kim*, Dongmin Lee*, <span class="me">Jiwon Jang</span>, Wafa Arsalane, Daekyung Kim, Junhyeok Lee, KyoungJoon Lee, Sang Hyun Park</div>
@@ -257,6 +265,7 @@
       </div>
 
       <div class="pub">
+        <a class="fig" href="Figure/MAPO.png"><img src="Figure/MAPO.png" alt="Overview of model agnostic preference optimization" loading="lazy"></a>
         <div class="badges"><span class="badge venue">ICLR 2027</span><span class="badge review">Under review</span></div>
         <div class="ptitle">Model Agnostic Preference Optimization for Medical Image Segmentation</div>
         <div class="authors">Yunseong Nam, <span class="me">Jiwon Jang</span>, Dongkyu Won, Sang Hyun Park, Soopil Kim</div>
@@ -264,6 +273,7 @@
       </div>
 
       <div class="pub">
+        <a class="fig" href="Figure/ReviceOnce.png"><img src="Figure/ReviceOnce.png" alt="Overview of text-editable single-image novel view synthesis" loading="lazy"></a>
         <div class="badges"><span class="badge venue">AAAI 2027</span><span class="badge review">Under review</span></div>
         <div class="ptitle">Revise Once, View Everywhere: Text-Editable Single-Image Novel View Synthesis</div>
         <div class="authors">Minseok Oh, Jihun Park, Hyeonseo Jo, <span class="me">Jiwon Jang</span>, Sunghoon Im</div>
