@@ -117,8 +117,6 @@
   .pub { display: grid; grid-template-columns: 200px minmax(0, 1fr); column-gap: 20px; align-items: start; }
   .pub > * { grid-column: 2; }
   .pub > .fig { grid-column: 1; grid-row: 1 / span 6; align-self: center; }
-  .fig { display: block; cursor: zoom-in; transition: opacity .15s; }
-  .fig:hover { opacity: .85; }
   .fig img { display: block; width: 100%; height: auto; }
   .badges { margin-bottom: 4px; font-size: 13.5px; }
   .badge.venue { font-weight: 600; color: var(--text); }
@@ -230,7 +228,7 @@
       <h2>Publications</h2>
 
       <div class="pub">
-        <a class="fig" href="Figure/MultiViewSAM2.png"><img src="Figure/MultiViewSAM2.png" alt="Overview of multi-view consistency-based SAM2 adaptation" loading="lazy"></a>
+        <div class="fig"><img src="Figure/MultiViewSAM2.png" alt="Overview of multi-view consistency-based SAM2 adaptation" loading="lazy"></div>
         <div class="badges"><span class="badge venue">MICCAI 2026</span><span class="badge hot">Early Accept · Top 9%</span><span class="badge hot">Oral</span></div>
         <div class="ptitle">Multi-View Consistency-Based Adaptation of SAM2 for 3D ABUS Tumor Segmentation</div>
         <div class="authors">Soopil Kim*, Dongmin Lee*, <span class="me">Jiwon Jang</span>, Wafa Arsalane, Daekyung Kim, Junhyeok Lee, KyoungJoon Lee, Sang Hyun Park</div>
@@ -238,7 +236,7 @@
       </div>
 
       <div class="pub">
-        <a class="fig" href="Figure/MAPO.png"><img src="Figure/MAPO.png" alt="Overview of model agnostic preference optimization" loading="lazy"></a>
+        <div class="fig"><img src="Figure/MAPO.png" alt="Overview of model agnostic preference optimization" loading="lazy"></div>
         <div class="badges"><span class="badge venue">ICLR 2027<span class="status"> · Under review</span></span></div>
         <div class="ptitle">Model Agnostic Preference Optimization for Medical Image Segmentation</div>
         <div class="authors">Yunseong Nam, <span class="me">Jiwon Jang</span>, Dongkyu Won, Sang Hyun Park, Soopil Kim</div>
@@ -246,7 +244,7 @@
       </div>
 
       <div class="pub">
-        <a class="fig" href="Figure/ReviceOnce.png"><img src="Figure/ReviceOnce.png" alt="Overview of text-editable single-image novel view synthesis" loading="lazy"></a>
+        <div class="fig"><img src="Figure/ReviceOnce.png" alt="Overview of text-editable single-image novel view synthesis" loading="lazy"></div>
         <div class="badges"><span class="badge venue">AAAI 2027<span class="status"> · Under review</span></span></div>
         <div class="ptitle">Revise Once, View Everywhere: Text-Editable Single-Image Novel View Synthesis</div>
         <div class="authors">Minseok Oh, Jihun Park, Hyeonseo Jo, <span class="me">Jiwon Jang</span>, Sunghoon Im</div>
