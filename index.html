@@ -135,13 +135,9 @@
   .pub:hover { border-color: #e2e2e6; box-shadow: 0 6px 20px rgba(20, 20, 40, .04); }
   .pub { display: grid; grid-template-columns: 200px minmax(0, 1fr); column-gap: 20px; align-items: start; }
   .pub > * { grid-column: 2; }
-  .pub > .fig { grid-column: 1; grid-row: 1 / span 6; }
-  .fig {
-    display: block; padding: 8px;
-    background: #fff; border: 1px solid var(--line); border-radius: 10px;
-    cursor: zoom-in; transition: border-color .15s;
-  }
-  .fig:hover { border-color: #dcdce0; }
+  .pub > .fig { grid-column: 1; grid-row: 1 / span 6; align-self: center; }
+  .fig { display: block; cursor: zoom-in; transition: opacity .15s; }
+  .fig:hover { opacity: .85; }
   .fig img { display: block; width: 100%; height: auto; }
   .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
   .badge {
